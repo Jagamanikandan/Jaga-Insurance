@@ -1,0 +1,8 @@
+.header{
+	background: url('/assets/jaga-insurance-logo.PNG');
+	background-size: 150px 120px;	
+	background-repeat: no-repeat;
+	height: 120px;
+	border-style: solid;
+    background-color: #050c54;
+}

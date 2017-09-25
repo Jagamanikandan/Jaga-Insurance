@@ -1,0 +1,25 @@
+.customertab{
+	color: white;
+	font-style: bold;
+	font-size: 18px;
+	padding-left:175px;
+	height: 40px;
+}
+
+.input{
+	height: 20px;
+	font-style: italic;
+	height: 20px;
+}
+
+.button{
+	background-color: #5097de;
+	border:0px;
+	font-size: 14px;
+	padding: 5px 15px 5px 15px;
+	height: 27px;
+}
+
+.newCustomer{
+	
+}
