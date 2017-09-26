@@ -1,10 +1,8 @@
-<p class='customertab'>
+<div class='customertab'>
   Search Customers  &nbsp;
-  <input name='txtsearchCustomer' placeholder= "Customer name..." class="input">
+  <input name='txtsearchCustomer' placeholder= "Enter Customer name or Policy number..." class="input">
   &nbsp;
-  <button name="btnSearch" type="submit" class='button'>Search</button>
-  &nbsp; &nbsp;
-  <button name="btnNewCustomer" type="button" class='button' ="/newcustomer/newcustomer.component.html">New Customer</button>
-</p>
-
-<app-quote-issue></app-quote-issue>
+  <button name="btnSearchCustomer" type="submit"><a routerLink="/customersearch">Search</a></button>
+  &nbsp;
+  <button name="btnNewCustomer" type="button"><a routerLink="/newcustomer">New Customer</a></button>
+ </div>
