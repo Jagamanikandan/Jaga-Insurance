@@ -1,0 +1,15 @@
+
+.customerslist li{
+	list-style-position: inside;
+	font-size: 18px;
+	padding-top: 10px;
+	list-style:url("");
+	width: 200px;
+	list-style-type: none;
+	align-content: center;	
+}
+
+ul{
+	border: solid;
+	margin-left:0px;
+}

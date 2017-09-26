@@ -9,6 +9,7 @@ import { QuoteIssueComponent } from './quote-issue/quote-issue.component';
 import { PolicyViewComponent } from './policy-view/policy-view.component';
 import { NewcustomerComponent } from './customers/newcustomer/newcustomer.component';
 import { CustomersearchComponent } from './customers/customersearch/customersearch.component';
+import { CustomerslistComponent } from './customers/customerslist/customerslist.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CustomersearchComponent } from './customers/customersearch/customersear
     QuoteIssueComponent,
     PolicyViewComponent,
     NewcustomerComponent,
-    CustomersearchComponent
+    CustomersearchComponent,
+    CustomerslistComponent
   ],
 
   imports: [
