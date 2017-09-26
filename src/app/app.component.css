@@ -1,8 +1,44 @@
-.header{
-	background: url('/assets/jaga-insurance-logo.PNG');
-	background-size: 150px 120px;	
-	background-repeat: no-repeat;
-	height: 120px;
-	border-style: solid;
-    background-color: #050c54;
+header{
+	background-color: #050c54;
+	align-self: auto;
+	align-content: flex-start;
+	align-items: baseline;
+    height: 120px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+
+}
+
+div{
+	display: -webkit-flex;
+    display: inline-block;
+	
+}
+
+
+aside{
+
+	border: solid;
+	width: 150px;
+	height:500px;
+	float:left;
+
+}
+
+section{
+	float: left;
+}
+
+app-users{
+	float:right;
+	width: 130px;
+	height: 85px;	
+}
+
+app-customers{
+	float:left;
+	margin-top: 80px;
+	
 }

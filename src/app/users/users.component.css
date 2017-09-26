@@ -1,7 +1,11 @@
-.usertab{
-	text-align-last:right;
-	color: white;
-	font-style: bold;
-	font-size: 18px;
-	height: 70px
+h4{
+	color: #ffffff;
+	margin:5px;
+	font-stretch:extra-expanded;
+}
+
+a{
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 14px;
 }
