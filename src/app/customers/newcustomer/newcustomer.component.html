@@ -1,16 +1,27 @@
-<h4>New Customer</h4>
-<form class = "newcustomer">
-<fieldset>
-	<legend>Customer Details</legend>
-	<p><label for='tCustFirstName'>First Name</label> <input name='txtCustFirstName' class="input" id='txtCustFirstName'></p>
-	<p><label>Last Name</label> <input name='txtCustLastName' class="input" id='txtCustLastName'></p>
-	<p><label>Gender</label>
-		 Male<input name='radioGender' type="radio" value="male" id='radioGender'>
-		 Female<input name='radioGender' type="radio" value="female" id='radioGender'></p>
-	<p><label>Date of Birth</label> <input name='dateBirthDate' ng-class="date"></p>
-	<p><label>Marital Status</label> <input name='dropdownMaritalStatus' class="select"></p>
-	<p><label>Phone Number</label> <input name='txtPhone' class="input" maxlength="10"></p>
-</fieldset><br>
-<button type="submit" name="btnSaveCustomer">Save Customer</button>
-<button type="reset" name="btnResetCustomer">Reset</button>
-</form>
+<fieldset class="newcustomer">
+		<legend>New Customer</legend>		
+		<form class = "newcustomerform">
+		<fieldset class="basicinfo">
+			<legend>Basic Information</legend>
+			<label for='txtCustFirstName'>First Name</label> <input name='txtCustFirstName' class="input" id='txtCustFirstName'><br>
+			<label for="txtCustLastName">Last Name</label> <input name='txtCustLastName' class="input" id='txtCustLastName'><br>
+			<label>Gender</label>
+				 <input name='radioGender' type="radio" value="male" id='radioGender'>Male &nbsp; &nbsp;
+				 <input name='radioGender' type="radio" value="female" id='radioGender'>Female<br>
+			<label>Date of Birth</label> <input name='dateBirthDate' ng-class="date"><br>
+			<label>Marital Status</label> <input name='dropdownMaritalStatus' class="select"><br>
+			<label>Phone Number</label> <input name='txtPhone' class="input" maxlength="10"><br>
+		</fieldset>
+		<fieldset class="address">
+			<legend>Adderss Details</legend>
+			<label for='txtAddressLine1'>Address</label> <input name='txtAddressLine1' class="input" id='txtAddressLine1'><br>
+			<label for='txtCity'>City</label> <input name='txtCity' class="input" id='txtCity'><br>
+			<label for='txtState'>State</label> <input name='txtState' class="input" id='txtState'><br>
+			<label for='txtPinCode'>Pin Code</label> <input name='txtPinCode' class="input" id='txtPinCode'><br>
+		</fieldset>
+		<fieldset class="button">
+			<button type="submit" name="btnSaveCustomer" formmethod="post" url="">Save Customer</button>
+			<button type="reset" name="btnResetCustomer">Reset</button>
+		</fieldset>
+		</form>
+</fieldset>

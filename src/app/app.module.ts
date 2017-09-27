@@ -10,6 +10,7 @@ import { PolicyViewComponent } from './policy-view/policy-view.component';
 import { NewcustomerComponent } from './customers/newcustomer/newcustomer.component';
 import { CustomersearchComponent } from './customers/customersearch/customersearch.component';
 import { CustomerslistComponent } from './customers/customerslist/customerslist.component';
+import { ViewcustomerComponent } from './customers/viewcustomer/viewcustomer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomerslistComponent } from './customers/customerslist/customerslist.
     PolicyViewComponent,
     NewcustomerComponent,
     CustomersearchComponent,
-    CustomerslistComponent
+    CustomerslistComponent,
+    ViewcustomerComponent
   ],
 
   imports: [
@@ -35,9 +37,13 @@ import { CustomerslistComponent } from './customers/customerslist/customerslist.
       component: CustomersearchComponent
     },
     {
+      path: 'viewcustomer',
+      component: ViewcustomerComponent
+    },
+    {
       path: 'quote-issue',
       component: QuoteIssueComponent
-    }    
+    }
   ])
   ],
   providers: [],
