@@ -3,6 +3,7 @@ import { UsersComponent } from './users/users.component';
 import { CustomersComponent } from './customers/customers.component';
 import { QuoteIssueComponent } from './quote-issue/quote-issue.component';
 import { PolicyViewComponent } from './policy-view/policy-view.component';
+import { CustomerslistComponent } from './customers/customerslist/customerslist.component';
 
 @Component({
   selector: 'app-root',

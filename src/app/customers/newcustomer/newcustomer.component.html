@@ -1,8 +1,16 @@
 <h4>New Customer</h4>
-<form>
+<form class = "newcustomer">
 <fieldset>
-	<caption>Customer Details</caption>
-	<label>First Name</label> <input name='txtCustFirstName' class="input"><br><br>
-	<label>Last Name</label> <input name='txtCustLastName' class="input">
-</fieldset>
+	<legend>Customer Details</legend>
+	<p><label for='tCustFirstName'>First Name</label> <input name='txtCustFirstName' class="input" id='txtCustFirstName'></p>
+	<p><label>Last Name</label> <input name='txtCustLastName' class="input" id='txtCustLastName'></p>
+	<p><label>Gender</label>
+		 Male<input name='radioGender' type="radio" value="male" id='radioGender'>
+		 Female<input name='radioGender' type="radio" value="female" id='radioGender'></p>
+	<p><label>Date of Birth</label> <input name='dateBirthDate' ng-class="date"></p>
+	<p><label>Marital Status</label> <input name='dropdownMaritalStatus' class="select"></p>
+	<p><label>Phone Number</label> <input name='txtPhone' class="input" maxlength="10"></p>
+</fieldset><br>
+<button type="submit" name="btnSaveCustomer">Save Customer</button>
+<button type="reset" name="btnResetCustomer">Reset</button>
 </form>

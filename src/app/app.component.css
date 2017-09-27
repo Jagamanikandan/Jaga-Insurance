@@ -10,35 +10,33 @@ header{
     padding-right: 10px;
 
 }
-
-div{
-	display: -webkit-flex;
-    display: inline-block;
-	
-}
-
-
 aside{
-
 	border: solid;
 	width: 150px;
 	height:500px;
 	float:left;
-
 }
 
 section{
 	float: left;
+	width: 500px;
+	margin: 20px;
 }
 
 app-users{
 	float:right;
 	width: 130px;
 	height: 85px;	
+	align-self: last;	
 }
 
 app-customers{
 	float:left;
 	margin-top: 80px;
 	
+}
+
+footer{
+	clear: both;
+	text-align: center;
 }
