@@ -1,4 +1,4 @@
-<header>
+<header class="portalhead">
 <div>
 <img src="/assets/jaga-insurance-logo.jpg" alt='Jaga Insurance Logo' height="120" width="150" align="left" >
 <app-customers></app-customers>
@@ -6,10 +6,14 @@
 </div>
 <br>
 </header>
-<br>
-<aside><app-customerslist></app-customerslist>
-</aside>
-<section><router-outlet></router-outlet></section>
+<div class="portalbody">
+<nav>
+<app-customerslist></app-customerslist>
+</nav>
+<section>
+	<router-outlet class="newcustomer"></router-outlet>
+</section>
+</div>
 <br>
 <footer>&copy;  Jaga Insurance 2017</footer>
 

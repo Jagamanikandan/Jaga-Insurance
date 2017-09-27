@@ -1,15 +1,28 @@
 
 .customerslist li{
-	list-style-position: inside;
+
 	font-size: 18px;
-	padding-top: 10px;
+	padding: 5px;
 	list-style:url("");
-	width: 200px;
-	list-style-type: none;
+	width: 150px;
 	align-content: center;	
+	list-style: none;
 }
 
-ul{
-	border: solid;
-	margin-left:0px;
+.customerslist{
+	padding: 1px 1px 1px 1px;
+	text-align: center;
+	margin:0px;
+}
+
+li:nth-child(2n){
+	background-color: lightgrey;
+}
+
+h4{
+	background-color: grey;
+	margin: 0px;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 16px;
 }

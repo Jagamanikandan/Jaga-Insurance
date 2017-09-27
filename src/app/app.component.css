@@ -4,39 +4,71 @@ header{
 	align-content: flex-start;
 	align-items: baseline;
     height: 120px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-
+    overflow: auto;
+    width: 1000px;
 }
-aside{
+nav{
 	border: solid;
-	width: 150px;
-	height:500px;
+	width: 155px;
+	height:750px;
 	float:left;
+	overflow: auto;
+	border-width: 0.5px;
+	background-color: grey;
+}
+
+nav app-customerslist{
+	border-top: solid;
 }
 
 section{
 	float: left;
-	width: 500px;
+	width: 800px;
 	margin: 20px;
+	overflow: auto;
 }
 
 app-users{
 	float:right;
-	width: 130px;
+	width: 15%;
 	height: 85px;	
-	align-self: last;	
+	align-self: last;
+	overflow: auto;	
 }
 
 app-customers{
 	float:left;
 	margin-top: 80px;
+	overflow: auto;
+	height:40px;
 	
+}
+
+.portalhead{
+	width: 1000px;
+	height: 120px;
+  	margin: 0 auto;
+  	overflow: auto;
+  	border: solid;
+  	border-width: 1px;
+  	border-color: #050c54;
+  	padding: 5px;
+}
+
+.portalbody{
+	width: 1000px;
+  	margin: 0 auto;
+  	overflow: auto;
+  	border: solid;
+  	border-width: 1px;
+  	border-color: #050c54;
+  	padding: 5px;
 }
 
 footer{
 	clear: both;
+	margin: 0 auto;
 	text-align: center;
+	overflow: auto;
+	width: 1000px;
 }
