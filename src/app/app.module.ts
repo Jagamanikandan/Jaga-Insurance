@@ -37,7 +37,7 @@ import { CustomerslistComponent } from './customers/customerslist/customerslist.
     {
       path: 'quote-issue',
       component: QuoteIssueComponent
-    }    
+    }
   ])
   ],
   providers: [],
