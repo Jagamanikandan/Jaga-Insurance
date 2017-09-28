@@ -11,6 +11,7 @@ import { NewcustomerComponent } from './customers/newcustomer/newcustomer.compon
 import { CustomersearchComponent } from './customers/customersearch/customersearch.component';
 import { CustomerslistComponent } from './customers/customerslist/customerslist.component';
 import { ViewcustomerComponent } from './customers/viewcustomer/viewcustomer.component';
+import { CustomersListService } from './customers/customerslist/customerslist.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,9 @@ import { ViewcustomerComponent } from './customers/viewcustomer/viewcustomer.com
     }
   ])
   ],
-  providers: [],
+  providers: [
+    CustomersListService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
