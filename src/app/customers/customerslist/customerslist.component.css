@@ -26,3 +26,8 @@ h4{
 	font-weight: bold;
 	font-size: 16px;
 }
+
+.selected {
+	background-color: #CFD8DC !important;
+	color: white;
+  }

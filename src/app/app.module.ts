@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
@@ -12,6 +13,8 @@ import { CustomersearchComponent } from './customers/customersearch/customersear
 import { CustomerslistComponent } from './customers/customerslist/customerslist.component';
 import { ViewcustomerComponent } from './customers/viewcustomer/viewcustomer.component';
 import { CustomersListService } from './customers/customerslist/customerslist.service';
+import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service';
 
 @NgModule({
   declarations: [
@@ -23,13 +26,18 @@ import { CustomersListService } from './customers/customerslist/customerslist.se
     NewcustomerComponent,
     CustomersearchComponent,
     CustomerslistComponent,
-    ViewcustomerComponent
+    ViewcustomerComponent,
+    LoginComponent
   ],
 
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
-    {
+        {
+          path: '', redirectTo: 'JagaInsurance', pathMatch: 'full'
+        },
+      {
       path: 'newcustomer',
       component: NewcustomerComponent
     },
@@ -38,17 +46,22 @@ import { CustomersListService } from './customers/customerslist/customerslist.se
       component: CustomersearchComponent
     },
     {
-      path: 'viewcustomer',
+      path: 'viewcustomer/:firstName',
       component: ViewcustomerComponent
     },
     {
       path: 'quote-issue',
       component: QuoteIssueComponent
+    },
+    {
+      path: 'customerslist',
+      component: CustomerslistComponent
     }
   ])
   ],
   providers: [
-    CustomersListService
+    CustomersListService,
+    LoginService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,35 @@
+<form ngForm name="loginForm" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" *ngIf="!isLoggedIn">
+  <div class="form-group">
+    <label for="txtusername" class="lbl">Username</label>
+    <input ngModel name="username" #username="ngModel" type="text" class="txtbox" id="txtusername">
+    <!--div class="alert alert-danger" *ngIf="username.touched && username.errors.required">* Firstname is required</div>
+    <div class="alert alert-danger" *ngIf="username.touched && username.errors.minlength">* Firstname minLength is 3</div -->
+    <br>
+    <label for="txtPassword" class="lbl">Password</label>
+    <input ngModel name="password" #password="ngModel" type="text" class="txtbox txtpswd" id="txtPassword">
+    <button>submit</button>
+  </div>
+  <p>{{ loginForm.value| json}}</p>
+</form>
+
+
+<div *ngIf="isLoggedIn">
+  <header class="portalhead">
+  <div>
+  <img src="/assets/jaga-insurance-logo.jpg" alt='Jaga Insurance Logo' height="120" width="150" align="left" >
+  <app-customers></app-customers>
+  <app-users></app-users>
+  </div>
+  <br>
+  </header>
+  <div class="portalbody">
+  <nav>
+  <app-customerslist></app-customerslist>
+  </nav>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+  </div>
+  <br>
+  <footer>&copy;  Jaga Insurance 2017</footer>
+  </div>

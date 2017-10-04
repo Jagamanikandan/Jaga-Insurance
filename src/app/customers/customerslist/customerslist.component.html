@@ -1,3 +1,4 @@
 <ul class="customerslist"><h4>Customers</h4>
-  <li *ngFor = "let customer of customerslist" (click)="gotoCustomer(customer.firstName)">{{customer.firstName}}</li>
+  <li *ngFor = "let customer of customerslist" [class.selected]="customer === selectedCustomer"
+  (click)="onSelect(customer)"><a routerLink="/viewcustomer/{{customer.firstName}}">{{customer.firstName}}</a></li>
 </ul>

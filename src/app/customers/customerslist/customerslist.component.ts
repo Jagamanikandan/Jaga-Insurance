@@ -9,14 +9,23 @@ import { CustomerData } from '..//customer';
   styleUrls: ['./customerslist.component.css']
 })
 export class CustomerslistComponent {
-  private router: Router;
   customerslist: CustomerData[];
   customerData: CustomerData;
-  constructor(private customersListService: CustomersListService) {
-  this.customerslist = customersListService.getCustomersList();
+  selectedCustomer: CustomerData;
+  constructor(private router: Router, private customersListService: CustomersListService) {
+    this.customerslist = customersListService.getCustomersList();
 }
-gotoCustomer(firstName: String): void {
-  this.router.navigate(['/viewcustomer', firstName]);
+
+// getCustomersList(): void {
+// this.customersListService.getCustomersList().then(customerslist => this.customerslist = customerslist);
+// }
+
+onSelect(customerdata: CustomerData): void {
+  this.selectedCustomer = customerdata;
+}
+
+gotoCustomer(): void {
+  this.router.navigate(['viewcustomer', this.selectedCustomer.firstName]);
 }
 }
 

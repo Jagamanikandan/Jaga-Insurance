@@ -33,6 +33,6 @@ export class CustomersListService {
     return this.customerslist;
   }
   getCustomer(firstname: string): CustomerData {
-    return this.customerslist[firstname];
+    return this.getCustomersList().find(customer => customer.firstName === firstname);
   }
 }
